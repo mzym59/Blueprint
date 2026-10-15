@@ -45,17 +45,26 @@
     <!--
         Set to true if your icon pack includes adaptive icons. false otherwise
     -->
-    <bool name="includes_adaptive_icons">false</bool>
+    <bool name="includes_adaptive_icons">true</bool>
+
+    <!--
+        Define if your icon pack is dedicated to provide Android Tv banners
+        If so, icons request will send applications banner instead of icon when available.
+        0. Automatically detect if the app is running on a Tv device
+        1. Enforce icons, no matter what is detected
+        2. Enforce banners, no matter what is detected
+    -->
+    <integer name="prefer_banner_for_icon_request">0</integer>
 
     <!-- Icon Pack designer/owner e-mail -->
-    <string name="email">someone@email.com</string>
+    <string name="email">xxx@xxx.com</string>
 
     <!--
     Mail subjects for the contact e-mail (help screen) and requests e-mail
     Leave email_subject empty to use "<app name> Support"
     -->
     <string name="email_subject"></string>
-    <string name="request_title">Blueprint Icon Request</string>
+    <string name="request_title">未实现</string>
 
     <!--
     1. Set the max amount of apps to request.
@@ -73,7 +82,7 @@
     If the time limit is set to 0 or less, users will be able to request as many times they want,
     with the max apps limit.
     -->
-    <integer name="max_apps_to_request">-1</integer>
+    <integer name="max_apps_to_request">0</integer>
     <integer name="time_limit_in_minutes">0</integer>
 
     <!--
